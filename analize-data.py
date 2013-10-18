@@ -37,13 +37,13 @@ class HandleData:
 
 		del self.sdata
 		if errCount > 0:
-			print 'lost packet count = %d' % errCount
+			print 'DONE: lost packet count = %d' % errCount
 		else:
-			print 'no packet lost'
+			print 'DONE: no packet lost'
 
 
 if __name__ == '__main__':
-	print 'analize %s' % sys.argv[1]
+	print 'INFO: analize %s' % sys.argv[1]
 	dataHandler = HandleData(sys.argv[1])
 	dataHandler.process()
 
